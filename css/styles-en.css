@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+/* Header and navbar styles */
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 55px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    border-bottom: 1px solid black;
+    background-color: grey;
+    z-index: 999;
+}
+#nav-logo {
+height: 50px;
+overflow: hidden;
+
+}
+#nav-logo img {
+    height: 50px;
+    padding: 5px 15px;
+}
+#nav-links {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 60%;
+}
+#nav-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 7px;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+#hero {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    text-align: center;
+    padding: 100px 0;
+    background-image: url(../images/gridbg.jpg);
+    color: orangered;
+}
+#job-title {
+    text-align: center;
+    padding: 10px;
+    background-color: darkslategray;
+}
+/* Main content styles */
+main {
+    display: grid;
+    grid-template-columns: minmax(300px, 1fr);
+    grid-auto-rows: auto;
+    align-items: center;
+    justify-items: center;
+    gap: 50px;
+    background-color: darkcyan;
+}
+main div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    scroll-margin-top: 80px;
+    width: 80%;
+    height: 150px;
+    border-radius: 10px;
+    border: 1px solid black;
+    position: relative;
+}
+main div:first-of-type {
+    margin-top: 50px;
+}
+main div:last-of-type {
+    margin-bottom: 50px;
+}
+main div h3 {
+    width: 100%;
+    border-bottom: 1px solid grey;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.more-link {
+    width: auto;
+    padding: 5px;
+    align-self: flex-end;
+    justify-self: flex-start;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 10px;
+}
+/* Footer styles */
+footer {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    padding: 20px;
+    background-color: darkgray;
+}
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    height: 80%;
+}
+#social-icons {
+    display: flex;
+    justify-content: space-between;
+}
+#social-icons div {
+    margin: 0 5px;
+}
